@@ -1,0 +1,129 @@
+body {                              /*Color de fondo*/
+    background-color: #576675;
+}
+
+/*Dar estilo a una barra de navegación*/
+
+/*Paso 1: propiedades de la lista*/
+
+.nav-ul {                                /*Selecionamos la lista*/                                                          
+    list-style: none;               /*Propiedad para quitar los puntos de los "li"*/
+    margin: 0px;                    /*Margin en 0 para que la lista ocupe todo el bloque sin espacios*/
+    padding: 2px 4px;               /*pading --> 2px top and buttom, 4px left and right*/
+    overflow: hidden;               /*Averiguar para que sirve la propiedad*/
+    position: fixed;                /*Averiguar para que sirve la propiedad*/
+    top: 0;                         /*Para pegar la lista a la parte superior*/
+    left: 0;                        /*Para pegar la lista en la parte izquierda*/
+    width: 100%;                    /*Que ocupe el ancho al 100%*/
+    background-color: #2e4053;    /*Color de fondo*/
+}
+
+/*Paso 2:  posicionar los li y dar diseño a los "a"*/
+
+.activo-izquierda {                                /*Con estos, hacemos que los elementos li*/
+    border-radius: 4px;
+    float: left;                    /*se posicionen al lado izquiero del la lista*/
+}
+
+.activo{                            /*Ponemos en la parte derecha aquellos elementos que-*/
+    border-radius: 4px;
+    float: right;                   /*lleven la clase activo*/
+}
+
+/*diseño de links "a"*/
+.nav-a{                                 
+    display: block;                 /*Los elementos "a" se ingresan dentro de un bloque*/
+    color: white;                 /*Color del texto*/
+    text-align: center;             /*Alineamos el texto*/
+    padding: 14px;                  /*Padding*/
+    font-size: 16px;                /*Tamanño de la letra*/
+    font-family: "Times New Roman"; /*Estilo del texto*/
+    text-decoration: none;          /*Quita la linea que subraya los elementos "a o links"*/
+}
+
+.activo:hover{
+    background-color: rgba(211, 47, 47, 0.2);
+}
+
+.activo-izquierda:hover {
+    background-color: rgba(211, 47, 47, 0.2); /*Da efecto al momento de poner el curso encima de los li*/
+}
+
+/*Estilos dropdown-otros*/
+
+.dropdown-otros{                   /*Selecionamos la clase del contenedor*/
+    position: relative;            /*Definimos la posición*/
+    display: inline-block;         /*Pasamos de un elemento block a un elemento inline*/
+}
+
+/* btn dentro del dropdown-otros*/
+.dropdown-otros-btn{               /*Selecionamos la clase, para dar estilo al btn*/
+    background-color: #2e4053;   /*Colocamos el fondo al boton*/
+    padding: 14px;                 /*padding*/
+    border: none;                  /*Quitamos el borde por defecto del btn*/
+    cursor: pointer;               /*Camabia el icono del maus al momento de pasar encima del btn*/
+    color: white;                /*Color del texto del btn*/
+    font-size: 16px;               /*Tamaño de la letra del btn*/
+    border-radius: 4px;
+    font-family: "Times New Roman"; /*Estilo del texto dentro del btn*/
+}
+
+.dropdown-otros:hover .dropdown-otros-btn{        /*Permite dar un efecto en el momento en que pasamos el cursor encima del btn*/
+    background-color: rgba(211, 47, 47, 0.2);   /*El btn esta dentro del contenedor dropdown-otros, por eso se seleciona primero la clase del contenedor padre*/
+}                                                 /*Luego se selecciona la clase del btn dentro del contenedor*/
+
+/*Diseño del contener de los links "a" dentro dropdown-otros*/
+.dropdown-otros-content{                          /*Selecionamos la clase dropdown-otros-content*/                
+    position: fixed;                              /*Damos una posicion al contenedor*/
+    display: none;                                /*Ocultamos el contenido del contedor*/
+    background-color: #29394a;                  /*Le damos un fondo al contenedor*/
+    min-width: 100px;                             /*Le damos un ancho minimo del contenedor*/
+    border-radius: 4px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2)  /*Le damos un efecto de sombra al contenedos*/
+}
+.dropdown-otros:hover .dropdown-otros-content{    /*Lista el contenido que hay dentro de dropdown-otros-content*/
+    display: block;                               /*para esto se seleciona dropdown-otros el contenedor padre más la propiedad hover-*/
+}                                                 /*luego la dropdown-otros-content que contiene el contenido*/
+
+/*Diseño de los links "a" dentro de dropdown-otros-content*/
+.dropdown-otros-content .dropdown-a{             /*Se seleciona la clase del contedor mas la etiqueta "a" que son de los links*/
+    color: #d5d8dc;                  /*Color del texto*/
+    text-align: left;                  /*La alienacion del texto dentro del contenedor*/
+    padding: 10px 14px;                /*El paddin, 10px -> superior e inferior, 14px -> derecha e izquierda*/ 
+    text-decoration: none;
+    margin: 5px 8px;
+    border-radius: 4px;
+    display: block;                    /*Le da un estilo de bloques a los links*/
+}
+
+.dropdown-otros-content a:hover{
+    background-color: rgba(211, 47, 47, 0.2);
+}
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+h1 {                                /*Propiedades H1*/
+    background-color: #29394a;    /*Fondo de la etiqueta*/
+    text-align: center;             /*Alineacion del texto*/
+    margin-top:px;                  /*Separacion entre la etiqueta la parte superior*/
+    padding: 5px;                   /*Padding*/
+    color: white;
+    border-radius: 4px;
+}
+
+/*---------------------------------------------------------------------*/
+.content{
+    margin-top: 70px;
+}
+
+table {
+    background-color: white;
+    width: 400px;
+    border: 1px solid #999;
+
+}
+
+th, td {
+    border: 1px solid black;
+}
