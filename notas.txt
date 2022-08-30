@@ -42,3 +42,6 @@ git diff nombreDelArchivo
 git blame nombre_del_archivo
 git blame newFile.py --> Nos muestra las lineas de codigo, tambien el estado en el que se encuentra
 
+------------------------
+git tag v1.0.0 ? --> Investigar
+git tag 
