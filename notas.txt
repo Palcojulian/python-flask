@@ -1,0 +1,44 @@
+filtros que se pueden implementar con git log
+----------------------------------------------------------
+git log -n donde n>0
+git log -3 Trae los ultimos 3 commits que se han realizado
+git log -2 Trae los ultimos 2 commits que se han realizado
+----------------------------------------------------------
+git log --after="filtro_que_se_aplicar"
+Ejemplos: 
+git log --after="yesterday"
+git log --after="30 minutes ago"
+git log --after="last tuesday"
+git log --after="last week"
+git log --after="2 weeks ago"
+git log --after="3-15-15"
+git log --after="3/15/15" --before="yesterdar"
+git log --since="3/15/15" --until="yesterdar"
+git log --author="Julian" --> Usuario que ha realizado commits <3
+git log --author="Julian\|jane" --> Usuario que ha realizado commits <3
+git log --grep="copyrigth" 
+git log -S="Math" 
+git log -p -S="Math" 
+git log -p -GMath\|Ramdom --> Filtros 
+git log -i --author="Julian"
+git log -p -S"ramdom"
+git log -i -p -S"ramdom"
+git log --no-merges
+git log master..cool-feature 
+git log -3 -i --author="Julian" README.file 
+git log -S"Math" --after="2 months ago" --oneline --stat -->Aplicacndo varios Filtros
+----------------------------------------
+
+git diff 
+git diff --cached ? --> Investigar
+git diff --stat
+git diff HEAD
+git diff {branch}
+git fetch
+git diff origin/main
+git diff nombreDelArchivo
+
+-----------------------
+git blame nombre_del_archivo
+git blame newFile.py --> Nos muestra las lineas de codigo, tambien el estado en el que se encuentra
+
