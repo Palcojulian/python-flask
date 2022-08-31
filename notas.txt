@@ -44,4 +44,10 @@ git blame newFile.py --> Nos muestra las lineas de codigo, tambien el estado en 
 
 ------------------------
 git tag v1.0.0 ? --> Investigar
-git tag 
+git tag -a v2.0.1 -m "Some message"
+--------------------
+git fetch  ? --> Investigar
+---------------------------
+git log origin/main.. ? --> Investigar
+-----------------------------
+git rebase -i origin/master
