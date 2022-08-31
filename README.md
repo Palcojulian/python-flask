@@ -1,7 +1,5 @@
-Hola Mundo
+Utilizan git
 
-Estoy practicando flask y utilzo la herramienta de Git
+Primeros pasos
 
-Wapooo 
-
-hOLAA COMO VAS
+Aprendiendo comandos basicos
