@@ -50,4 +50,17 @@ git fetch  ? --> Investigar
 ---------------------------
 git log origin/main.. ? --> Investigar
 -----------------------------
-git rebase -i origin/master
+git rebase -i origin/master   ? --> Investigar
+----------------------------
+git log --oneline
+----------------------------
+git push -f ? --> Investigar
+--------------------------
+git reabse --abort ? --> Investigar
+-------------------------------
+git bisect start ? --> Investigar
+-------------------------------
+npm test dentro de bisect start ? --> Investigar
+-------------------------------------
+git bisect bad ? --> Investigar
+
